@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <script type="application/javascript" src="draw.js"></script>
+ </head>
+ <body>
+   <h1>LGTM生成するやつ</h1>
+   <canvas id="canvas" width="768" height="0"></canvas>
+   <br>
+   <input type="button" onClick="draw();" value="画像生成">
+   <input type="text" id="src" placeholder="画像URL" style="width:350px;height:30px;">
+   <br>
+   <input type="color" id="color" onChange="draw();" value="#fafafa">
+   <input type="search" id="title" onChange="draw();" placeholder="タイトル" value="L G T M">
+   <input type="search" id="subtitle" onChange="draw();" placeholder="サブタイトル" value="- Looks Good To Me -">
+   <select id="font">
+    <option value="'ＭＳゴシック'">MSゴシック</option>
+    <option value="'ＭＳ明朝'">MS明朝</option>
+    <option value="serif">serif</option>
+</select>
+   <h3>TODO</h3>
+   <p>
+     gif対応s<br>
+     履歴保存<br>
+     履歴一覧<br>
+   </p>
+ </body>
+</html>
